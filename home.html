@@ -5,16 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cody Kim Tutoring</title>
   <style>
+    :root { --crimson: crimson; }
     body { margin:0; font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:#fdfdfd; color:#222; }
     header { padding:24px 20px; text-align:center; border-bottom:2px solid #eee; }
-    header h1 { margin:0; font-size:clamp(28px,4vw,40px); color:crimson; font-family:"Times New Roman", Times, serif; }
-    nav a { margin:0 10px; color:crimson; text-decoration:none; font-weight:600; }
+    header h1 { margin:0; font-size:clamp(28px,4vw,40px); color:var(--crimson); font-family:"Times New Roman", Times, serif; }
+    header p { margin:8px 0; }
+    nav { margin-top:8px; }
+    nav a { margin:0 10px; color:var(--crimson); text-decoration:none; font-weight:600; }
     nav a:hover { text-decoration:underline; }
-    main { max-width:800px; margin:40px auto; padding:0 20px; }
-    section { margin-bottom:60px; }
-    section h2 { color:crimson; border-bottom:2px solid crimson; padding-bottom:4px; margin-bottom:16px; font-family:"Times New Roman", Times, serif; }
+
+    main { max-width:900px; margin:40px auto; padding:0 20px; }
+    h2, h3 { font-family:"Times New Roman", Times, serif; color:var(--crimson); }
+    h2 { border-bottom:2px solid var(--crimson); padding-bottom:4px; margin-bottom:16px; }
+    .ranked { counter-reset:item; list-style:none; padding-left:0; }
+    .ranked li { margin:14px 0; }
+    .ranked li::before { counter-increment:item; content:counter(item) ". "; color:var(--crimson); font-weight:700; font-family:"Times New Roman", Times, serif; }
+
+    table { width:100%; border-collapse:collapse; border:1px solid #ddd; background:#fff; margin-top:8px; }
+    th, td { padding:10px 12px; border:1px solid #e5e5e5; vertical-align:top; }
+    th { text-align:left; background:#fafafa; font-weight:700; }
+    tbody tr:nth-child(even) { background:#fcfcfc; }
+    .footnotes { margin-top:10px; font-size:0.9rem; color:#555; }
+
+    a { color:var(--crimson); text-decoration:none; }
+    a:hover { text-decoration:underline; }
     footer { border-top:2px solid #eee; padding:16px 20px; text-align:center; color:#666; }
-    a { color:crimson; text-decoration:none; } a:hover { text-decoration:underline; }
   </style>
 </head>
 <body>
@@ -25,28 +40,93 @@
        <strong>Text:</strong> <a href="tel:+17035477294">703-547-7294</a></p>
     <nav>
       <a href="./home.html" aria-current="page">Home</a>
-      <a href="./parents.html">Parents</a>
       <a href="./students.html">Students</a>
     </nav>
   </header>
 
   <main>
+    <!-- Credentials (kept brief and punchy) -->
     <section id="credentials">
       <h2>Credentials</h2>
       <ul>
         <li>M.S. Data Science, Johns Hopkins University</li>
         <li>B.A. Economics, Magna Cum Laude, Middlebury College</li>
-        <li>Top 1% GRE</li>
-        <li>Top 1% SAT</li>
-        <li>Top 1% PSAT, National Merit Scholar</li>
+        <li>Top 1% GRE • Top 1% SAT • Top 1% PSAT (National Merit Scholar)</li>
+        <li>10+ years SAT tutoring experience</li>
       </ul>
     </section>
 
+    <!-- About + Teaching approach merged -->
     <section id="about">
-      <h2>About Me</h2>
-      <p>I’m Cody Kim — a data scientist by trade and an SAT tutor by passion. Over the past decade I’ve helped students raise their scores with clear strategies, efficient practice, and test-day confidence.</p>
-      <p><strong>How I coach:</strong> we target the biggest score gains first, drill with purpose, and review honestly. Reading focuses on evidence and trap patterns; Math on structured problem-solving and pacing; Writing on grammar patterns and concision. Students leave sessions knowing not just <em>what</em> to do, but <em>why</em>.</p>
+      <h2>About Me & Approach</h2>
+      <p>I’m Cody Kim — a data scientist and SAT tutor. I help students raise scores with clear strategies, efficient practice, and test-day confidence.</p>
+      <p><strong>How I coach:</strong> we target the biggest score gains first, drill with purpose, and review honestly. Reading focuses on evidence and trap patterns; Math on structured problem-solving and pacing; Writing on grammar patterns and concision.</p>
       <p><strong>Typical results:</strong> +130 to +240 points in 6–10 weeks with consistent homework and feedback loops.</p>
+    </section>
+
+    <!-- Former Parents content -->
+    <section id="timing">
+      <h2>Best Times to Study for the SAT (Ranked)</h2>
+      <p>Summers are ideal because students aren’t juggling heavy coursework and extracurriculars.</p>
+      <ol class="ranked">
+        <li><strong>Summer before Junior Year (Ideal)</strong><br>
+            SAT Math covers content through Algebra II; waiting until Senior year risks forgetting fundamentals.
+            Reading speed, comprehension, and vocabulary change little from Junior to Senior year, so earlier prep is just as effective.
+            Studying now provides more testing opportunities and less pressure; the next summer can focus on applications.</li>
+        <li><strong>Summer before Senior Year</strong><br>
+            By this point most math/grammar concepts have been covered in school, with multiple test dates still available before applications.
+            A strong choice if earlier prep wasn’t feasible.</li>
+        <li><strong>Senior Fall</strong><br>
+            Senior-year grades often weigh less in admissions (especially for early decision). Fall prep still allows testing before key deadlines—less ideal than summer, but better than mid–Junior year.</li>
+        <li><strong>Junior Year (Least Ideal)</strong><br>
+            Junior year is typically the heaviest academically. SAT prep often detracts from core classes and activities unless the schedule is unusually light.</li>
+      </ol>
+    </section>
+
+    <section id="dates">
+      <h2>Upcoming SAT Dates</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>SAT Test Date*</th>
+            <th>Registration Deadline</th>
+            <th>Deadline for Changes, Regular Cancellation,<br>and Late Registration**</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Aug. 23, 2025</td><td>Aug. 8, 2025</td><td>Aug. 12, 2025</td></tr>
+          <tr><td>Sept. 13, 2025</td><td>Aug. 29, 2025</td><td>Sept. 2, 2025</td></tr>
+          <tr><td>Oct. 4, 2025</td><td>Sept. 19, 2025</td><td>Sept. 23, 2025</td></tr>
+          <tr><td>Nov. 8, 2025</td><td>Oct. 24, 2025</td><td>Oct. 28, 2025</td></tr>
+          <tr><td>Dec. 6, 2025</td><td>Nov. 21, 2025</td><td>Nov. 25, 2025</td></tr>
+          <tr><td>March 14, 2026</td><td>Feb. 27, 2026</td><td>March 3, 2026</td></tr>
+          <tr><td>May 2, 2026</td><td>Apr. 17, 2026</td><td>Apr. 21, 2026</td></tr>
+          <tr><td>June 6, 2026</td><td>May 22, 2026</td><td>May 26, 2026</td></tr>
+        </tbody>
+      </table>
+      <div class="footnotes">
+        <p>* Dates may change — confirm on the official SAT site.</p>
+        <p>** Change/cancellation/late registration windows vary by location/policy.</p>
+      </div>
+    </section>
+
+    <section id="resources">
+      <h2>Resources I Use When Tutoring</h2>
+      <h3>Core Materials</h3>
+      <ul>
+        <li>Prefix, root word, and suffix lists for vocabulary building</li>
+        <li>Vocabulary drawn from previous SAT tests</li>
+        <li>Key grammar rules and usage patterns</li>
+        <li>Full-length Digital Practice Tests in Bluebook (best simulation of the official digital interface)</li>
+        <li>Seven paper full-length practice tests from the College Board</li>
+      </ul>
+
+      <h3>Magoosh or Khan Academy</h3>
+      <p>Depending on the student’s preference, I incorporate either platform for structured practice:</p>
+      <ul>
+        <li><strong>Magoosh SAT:</strong> Detailed pacing feedback, question flagging for review, and a score predictor that has proven reliable in my experience. Subscription typically costs $90–$130. (No affiliation.)</li>
+        <li><strong>Khan Academy:</strong> Free, high-quality videos and adaptive practice aligned to official SAT skills; many students use this successfully.</li>
+      </ul>
     </section>
   </main>
 
