@@ -5,92 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Parents — Cody Kim Tutoring</title>
   <style>
-    /* Typography */
     :root { --crimson: crimson; }
     body { margin:0; font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:#fdfdfd; color:#222; }
-    header { padding:24px 20px; text-align:center; border-bottom:2px solid #eee; }
-    header h1 { margin:0; font-size:clamp(28px,4vw,40px); color:var(--crimson); font-family: "Times New Roman", Times, serif; }
-    header p { margin:8px 0; }
-    nav { margin-top:8px; }
-    nav a { margin:0 10px; color:var(--crimson); text-decoration:none; font-weight:600; }
-    nav a:hover { text-decoration:underline; }
-
     main { max-width:900px; margin:40px auto; padding:0 20px; }
-    section { margin-bottom:48px; }
-    section h2 { 
-      font-family: "Times New Roman", Times, serif; 
-      color:var(--crimson); 
-      border-bottom:2px solid var(--crimson); 
-      padding-bottom:4px; 
-      margin-bottom:16px; 
-      font-size:clamp(22px,3vw,28px);
-    }
-
-    /* Ranked list */
-    .ranked { counter-reset: item; list-style:none; padding-left:0; }
+    h2, h3 { font-family:"Times New Roman", Times, serif; color:var(--crimson); }
+    h2 { border-bottom:2px solid var(--crimson); padding-bottom:4px; margin-bottom:16px; }
+    .ranked { counter-reset:item; list-style:none; padding-left:0; }
     .ranked li { margin:14px 0; }
-    .ranked li::before {
-      counter-increment: item;
-      content: counter(item) ". ";
-      color: var(--crimson);
-      font-weight:700;
-      font-family: "Times New Roman", Times, serif;
-    }
-    .note { color:#555; font-size:0.95rem; }
+    .ranked li::before { counter-increment:item; content:counter(item) ". "; color:var(--crimson); font-weight:700; font-family:"Times New Roman", Times, serif; }
 
-    /* Table */
-    table { width:100%; border-collapse:collapse; border:1px solid #ddd; background:#fff; }
+    table { width:100%; border-collapse:collapse; border:1px solid #ddd; background:#fff; margin-top:8px; }
     th, td { padding:10px 12px; border:1px solid #e5e5e5; vertical-align:top; }
     th { text-align:left; background:#fafafa; font-weight:700; }
     tbody tr:nth-child(even) { background:#fcfcfc; }
     .footnotes { margin-top:10px; font-size:0.9rem; color:#555; }
 
-    footer { border-top:2px solid #eee; padding:16px 20px; text-align:center; color:#666; }
     a { color:var(--crimson); text-decoration:none; }
     a:hover { text-decoration:underline; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Cody Kim Tutoring</h1>
-    <p>Personalized SAT tutoring with 10+ years of experience • Online & local in Northern Virginia</p>
-    <p>
-      <strong>Email:</strong> <a href="mailto:codyjameskim@gmail.com">codyjameskim@gmail.com</a> •
-      <strong>Text:</strong> <a href="tel:+17035477294">703-547-7294</a>
-    </p>
-    <nav>
-      <a href="./index.html">Home</a>
-      <a href="./parents.html" aria-current="page">Parents</a>
-      <a href="./students.html">Students</a>
-    </nav>
-  </header>
-
   <main>
     <section>
       <h2>Best Times to Study for the SAT (Ranked)</h2>
-      <p class="note"><em>Summers are ideal</em> because students aren’t juggling heavy coursework and extracurriculars.</p>
+      <p>Summers are ideal because students aren’t juggling heavy coursework and extracurriculars.</p>
       <ol class="ranked">
-        <li>
-          <strong>Summer before Junior Year (Ideal)</strong><br>
-          Math on the SAT covers content through Algebra II; waiting until Senior year risks forgetting earlier material. 
-          Reading speed, comprehension, and vocabulary change little from Junior to Senior year, so earlier prep is just as effective. 
-          Studying now gives more testing opportunities and lowers pressure, while the next summer can be used for college applications.
-        </li>
-        <li>
-          <strong>Summer before Senior Year</strong><br>
-          By this point most math/grammar concepts have been covered in school, and there are still multiple test dates available before applications. 
-          Great option if earlier prep wasn’t feasible.
-        </li>
-        <li>
-          <strong>Senior Fall</strong><br>
-          Senior-year grades often weigh less in admissions (especially for early decision), so using fall for SAT prep can work well. 
-          Not as flexible as summer, but preferable to mid–Junior year for most students.
-        </li>
-        <li>
-          <strong>Junior Year (Least Ideal)</strong><br>
-          Junior year is typically the heaviest academically. SAT prep can cannibalize time from core classes and activities. 
-          Unless the schedule is unusually light, it’s the least efficient time to study.
-        </li>
+        <li><strong>Summer before Junior Year (Ideal)</strong><br>
+            SAT Math covers content through Algebra II; waiting until Senior year risks forgetting fundamentals.
+            Reading speed, comprehension, and vocabulary change little from Junior to Senior year, so earlier prep is just as effective.
+            Studying now provides more testing opportunities and less pressure; the next summer can focus on applications.</li>
+        <li><strong>Summer before Senior Year</strong><br>
+            By this point most math/grammar concepts have been covered in school, with multiple test dates still available before applications.
+            A strong choice if earlier prep wasn’t feasible.</li>
+        <li><strong>Senior Fall</strong><br>
+            Senior-year grades often weigh less in admissions (especially for early decision). Fall prep still allows testing before key deadlines—less ideal than summer, but better than mid–Junior year.</li>
+        <li><strong>Junior Year (Least Ideal)</strong><br>
+            Junior year is typically the heaviest academically. SAT prep often detracts from core classes and activities unless the schedule is unusually light.</li>
       </ol>
     </section>
 
@@ -112,18 +62,38 @@
           <tr><td>Dec. 6, 2025</td><td>Nov. 21, 2025</td><td>Nov. 25, 2025</td></tr>
           <tr><td>March 14, 2026</td><td>Feb. 27, 2026</td><td>March 3, 2026</td></tr>
           <tr><td>May 2, 2026</td><td>Apr. 17, 2026</td><td>Apr. 21, 2026</td></tr>
-          <tr><td>June 6, 2026</td><td>May 22, 2026</td><td>May 26, 2026</td></tr>
+          <tr><td>June 6, 2026</td><td>May. 22, 2026</td><td>May. 26, 2026</td></tr>
         </tbody>
       </table>
       <div class="footnotes">
-        <p>* Dates are based on currently published schedules and may change. Always confirm the latest details with the official SAT registration site.</p>
-        <p>** Change/cancellation/late registration windows may vary by location and testing policies.</p>
+        <p>* Dates may change — confirm on the official SAT site.</p>
+        <p>** Change/cancellation/late registration windows vary by location/policy.</p>
       </div>
     </section>
-  </main>
 
-  <footer>
-    © <script>document.write(new Date().getFullYear())</script> Cody Kim Tutoring
-  </footer>
+    <section>
+      <h2>Resources I May Use When Tutoring</h2>
+      <h3>Magoosh SAT (Paid)</h3>
+      <ul>
+        <li>Tracks pace, lets us flag questions, and includes a score predictor that was accurate when I used it for GRE.</li>
+        <li>Not affiliated with Magoosh — I just liked it when I self-studied for the SAT.</li>
+        <li>Costs typically $90–$130.</li>
+      </ul>
+
+      <h3>Core Materials I Provide</h3>
+      <ul>
+        <li>Prefix, root word, and suffix lists (structured vocab building)</li>
+        <li>Vocabulary from previous SAT tests</li>
+        <li>Key grammar rules and usage patterns</li>
+        <li>Full-length Digital Practice Tests in Bluebook (best simulation of the official test environment)</li>
+        <li>Six paper full-length practice tests from the College Board</li>
+      </ul>
+
+      <h3>Free Resources</h3>
+      <p>The curriculum is the same except I substitute <strong>Khan Academy</strong> for Magoosh. Their videos are excellent, align to official SAT skills, and most of my students use them successfully.</p>
+    </section>
+  </main>
 </body>
 </html>
+
+
