@@ -3,44 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cody SAT Tutoring</title>
+  <title>Cody Kim Tutoring</title>
   <style>
-    body { margin:0; font:16px/1.6 system-ui, sans-serif; background:#0b0c10; color:#e6e7eb; }
-    header, footer { padding:16px 20px; border-bottom:1px solid #1b1e27; }
-    footer { border-top:1px solid #1b1e27; border-bottom:none; text-align:center; color:#b4b8c2; }
-    nav a { margin-right:12px; color:#7aa2f7; text-decoration:none; }
-    .hero { max-width:900px; margin:40px auto; padding:0 20px; }
-    .hero h1 { font-size:clamp(28px,4vw,40px); line-height:1.2; }
-    .btn { display:inline-block; background:#7aa2f7; color:#0b0c10; font-weight:700; padding:10px 14px; border-radius:10px; text-decoration:none; margin-right:8px; }
-    .btn--ghost { background:transparent; color:#7aa2f7; border:1px solid #2b3a67; }
+    body { margin:0; font:16px/1.6 system-ui, sans-serif; background:#fdfdfd; color:#222; }
+    header { padding:24px 20px; text-align:center; border-bottom:2px solid #eee; }
+    header h1 { margin:0; font-size:clamp(28px,4vw,40px); color:crimson; }
+    .btn {
+      display:inline-block;
+      margin-top:12px;
+      background:crimson;
+      color:#fff;
+      font-weight:600;
+      padding:10px 18px;
+      border-radius:8px;
+      text-decoration:none;
+    }
+    .btn:hover { opacity:0.9; }
+    main { max-width:800px; margin:40px auto; padding:0 20px; }
+    section { margin-bottom:60px; }
+    section h2 { color:crimson; border-bottom:2px solid crimson; padding-bottom:4px; margin-bottom:16px; }
+    footer { border-top:2px solid #eee; padding:16px 20px; text-align:center; color:#666; }
   </style>
 </head>
 <body>
   <header>
-    <nav>
-      <a href="./">Home</a>
-      <a href="./about.html">About</a>
-      <a href="./resources.html">Resources</a>
-      <a href="./vocabulary.html">Vocabulary</a>
-    </nav>
+    <h1>Cody Kim Tutoring</h1>
+    <p>Personalized SAT tutoring with 10+ years of experience • Online & local in Northern Virginia</p>
+    <a class="btn" href="mailto:codyjameskim@gmail.com">Email Me</a>
   </header>
 
   <main>
-    <section class="hero">
-      <h1>Personalized SAT tutoring with 10+ years of teaching experience</h1>
-      <p>Online and local in Northern Virginia.</p>
-      <p>Text me at <a href="tel:+17035477294">703-547-7294</a> or email <a href="mailto:codyjameskim@gmail.com">codyjameskim@gmail.com</a> if you are interested.</p>
-      <p>
-        <a class="btn" href="mailto:codyjameskim@gmail.com">Email me</a>
-        <a class="btn btn--ghost" href="tel:+17035477294">Text me</a>
-      </p>
+    <section id="credentials">
+      <h2>Credentials</h2>
+      <ul>
+        <li>B.A. Economics, Magna Cum Laude, Middlebury College</li>
+        <li>M.S. Data Science, Johns Hopkins University</li>
+        <li>10+ years SAT tutoring experience</li>
+        <li>Students regularly achieve +130–240 point improvements</li>
+      </ul>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m Cody Kim — a data scientist by trade and an SAT tutor by passion. Over the past decade, I’ve helped students raise their scores through clear strategies, efficient practice, and test-day confidence. I believe tutoring isn’t about shortcuts; it’s about systems that stick.</p>
+    </section>
+
+    <section id="philosophy">
+      <h2>Teaching Philosophy</h2>
+      <p>My approach is straightforward: target the areas with the biggest score payoff, drill with purpose, and review with honesty. I emphasize evidence-based reading, structured problem-solving in math, and pattern recognition in writing. Students leave my sessions not just knowing <em>what</em> to do, but <em>why</em>.</p>
     </section>
   </main>
 
   <footer>
-    © <script>document.write(new Date().getFullYear())</script> Cody SAT Tutoring
+    © <script>document.write(new Date().getFullYear())</script> Cody Kim Tutoring
   </footer>
 </body>
 </html>
-
 
