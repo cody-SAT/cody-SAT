@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Students — Cody Kim Tutoring</title>
+  <style>
+    :root { --crimson: crimson; }
+    body { margin:0; font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:#fdfdfd; color:#222; }
+    header { padding:24px 20px; text-align:center; border-bottom:2px solid #eee; }
+    header h1 { margin:0; font-size:clamp(28px,4vw,40px); color:var(--crimson); font-family: "Times New Roman", Times, serif; }
+    nav a { margin:0 10px; color:var(--crimson); text-decoration:none; font-weight:600; }
+    nav a:hover { text-decoration:underline; }
+    main { max-width:900px; margin:40px auto; padding:0 20px; }
+    section h2 { 
+      font-family: "Times New Roman", Times, serif; color:var(--crimson);
+      border-bottom:2px solid var(--crimson); padding-bottom:4px; margin-bottom:16px;
+    }
+    footer { border-top:2px solid #eee; padding:16px 20px; text-align:center; color:#666; }
+    a { color:var(--crimson); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cody Kim Tutoring</h1>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./parents.html">Parents</a>
+      <a href="./students.html" aria-current="page">Students</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Start Here</h2>
+      <p>Coming soon: vocab sheet (make-a-copy), practice test set, pacing drills, and strategy notes.</p>
+    </section>
+  </main>
+
+  <footer>
+    © <script>document.write(new Date().getFullYear())</script> Cody Kim Tutoring
+  </footer>
+</body>
+</html>
