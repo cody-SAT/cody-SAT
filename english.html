@@ -12,6 +12,12 @@
     nav { margin-top:8px; }
     nav a { margin:0 10px; color:var(--maroon); text-decoration:none; font-weight:600; }
     nav a:hover { text-decoration:underline; }
+    nav a[aria-current="page"] {
+      background: var(--maroon);
+      color: #fff;
+      border-radius: 6px;
+      padding: 4px 8px;
+    }
     main { max-width:900px; margin:40px auto; padding:0 20px; }
     h2 { font-family:"Times New Roman",Times,serif; color:var(--maroon); border-bottom:2px solid var(--maroon); padding-bottom:4px; margin-bottom:16px; }
     h3 { margin-top:24px; font-size:20px; color:#333; }
@@ -34,7 +40,6 @@
   </header>
 
   <main>
-    <!-- Shared Top Sections -->
     <section id="priorities">
       <h2>What Should I Prioritize?</h2>
       <ol>
@@ -55,7 +60,6 @@
       </ul>
     </section>
 
-    <!-- English-specific -->
     <section id="english-resources">
       <h2>English Resources</h2>
       <ul class="links">
